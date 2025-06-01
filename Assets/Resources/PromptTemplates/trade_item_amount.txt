@@ -1,0 +1,27 @@
+# trade_item_amount.txt  
+# params: agent, iss, statements, target, inventory
+
+Here is a brief description of {{ agent }}:  
+{{ iss }}
+
+Here are thoughts and memories in {{ agent }}’s mind:  
+{{ statements }}
+
+Here is {{ agent }}’s current inventory:  
+{{ inventory }}
+
+{{ agent }} has decided to send one of the items to {{ target }}.  
+Choose the most appropriate item and quantity to send, and write a short message that {{ agent }} says while giving it.
+
+Respond in **exactly** this JSON format:
+{
+  "name": "The name of the item",
+  "quantity": 1,
+  "message": "The sentence {{ agent }} says when giving the item"
+}
+
+- The message should be natural and in character, as if {{ agent }} is speaking to {{ target }}.  
+- Return the result as a strict JSON without any Markdown formatting or code block markers.
+- No explanation or extra text.
+
+

@@ -1,0 +1,15 @@
+# poignancy_chat.txt
+# params: agent, iss, conversation
+
+Here is a brief description of {{ agent }}.  
+{{ iss }}
+
+On a scale from 1 to 20, rate how emotionally significant the conversation is for {{ agent }}, based on its likelihood to affect their short- or medium-term goals.
+
+
+- 1 = Mundane and neutral (e.g., routine greetings), unlikely to affect behavior or emotions  
+- 20 = Emotionally intense or personally meaningful (e.g., threat to purpose, identity, or core attachments), likely to shift priorities or cause internal reaction
+
+Conversation: {{ conversation }}
+
+Respond with a single number from 1 to 20. No explanation. No extra text.

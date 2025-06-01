@@ -1,0 +1,12 @@
+# planning_thought.txt  
+# params: agent, iss, chat_history, target
+
+Here is a brief description of {{ agent }}:  
+{{ iss }}
+
+{{ agent }} had a conversation with {{ target }}. The content of the conversation is:  
+{{ chat_history }}
+
+From {{ agent }}’s perspective, write down anything from the conversation that should be remembered for future planning.  
+Respond with a single full sentence that reflects {{ agent }}’s thoughts or intentions.  
+If there is nothing relevant, respond with: None

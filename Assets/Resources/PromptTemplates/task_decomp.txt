@@ -1,0 +1,26 @@
+# task_decomp.txt
+# params: agent, iss, activity, duration, next_schedules
+
+Here is a brief description of {{ agent }}:
+{{ iss }}
+
+
+{{ agent }}'s brief schedule for rest of today is:
+{{ next_schedules }}
+
+{{ agent }} is planning on {{ activity }} in the next {{ duration }} minutes.
+
+In 10-min increments, decompose this activity into a sequence of smaller subtasks. Return the result as a strict JSON array without any Markdown formatting or code block markers, where each subtask having this format:
+
+{
+  "DurationInMinutes": 10,
+  "Activity": "gathering and preparing sharpening tools"
+},
+
+Requirements:
+- The total duration of all subtasks must add up to {{ duration }};
+- Each subtask must be exactly 10-minute aligned (i.e., duration must be a multiple of 10) but shorter than 60 minutes;
+- "Activity" must be written in **present continuous tense**, so it fits the sentence: "{{ agent }} is {{ activity }}";
+- Take the whole schedule into consideration and make sure the subtasks fit within the time frame of {{ activity }};
+- Do not include explanations, commentary, or any extra text—return only the JSON array;
+- Keep the plan consistent with {{ agent }}'s identity, behavior, and personality.

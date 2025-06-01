@@ -1,0 +1,25 @@
+# reaction_v2.txt
+# params: agent, iss, events
+
+Here is a brief description of {{ agent }}:
+{{ iss }}
+
+{{ agent }} has perceived and recalled the following things:
+{{ events }}
+
+If {{ agent }} would like to respond to any of these events, return a new action for {{ agent }} to take.
+The action must follow this json format:
+{
+  "DurationInMinutes": int,
+  "Activity": string
+}
+
+Notes: 
+- The `Activity` must be a phrase that fits into a sentence: "{{ agent }} is {activity}".
+- DurationInMinutes must be a multiple of 10  
+- Return the result as a strict **JSON object**, with no Markdown formatting, code blocks, or extra text
+- Specify whether {{ agent }} would like to attack, chat with, or give something to another character, or simply wait and follow them, if the activity is related to another character.
+
+If {{ agent }} doesn't want to respond to any of the events, return exactly: `none`
+
+Respond with **only** the JSON (if reacting), or `none`. No explanation or extra content.

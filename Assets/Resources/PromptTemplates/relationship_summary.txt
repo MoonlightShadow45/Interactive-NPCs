@@ -1,0 +1,16 @@
+# relationship_summary.txt  
+# params: agent, iss, statements, target
+
+Here is a brief description of {{ agent }}:  
+{{ iss }}
+
+{{ agent }} has experienced or recalled the following:  
+{{ statements }}
+
+Based on the information above, summarize {{ agent }}’s current relationship with {{ target }}.  
+What does {{ agent }} feel, believe, or know about {{ target }}?
+
+If there is no relevant information about {{ target }}, respond with:  
+`{{ agent }} knows nothing about {{ target }}`
+
+Be concise and specific. Focus only on the relationship between {{ agent }} and {{ target }}. No explanation. Only respond with the summary or the fallback sentence above.

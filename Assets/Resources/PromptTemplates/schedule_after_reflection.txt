@@ -1,0 +1,29 @@
+# schedule_after_reaction.txt  
+# params: agent, iss, next_schedules, old_currently
+
+Here is a brief description of {{ agent }}:  
+{{ iss }}
+
+{{ agent }}'s previous "currently" status was:  
+{{ old_currently }}
+
+Here is {{ agent }}'s previous schedule for the rest of the day (in human-readable format):  
+{{ next_schedules }}
+
+The total duration of the schedule must remain exactly the same after any changes.
+
+If {{ agent }} wants to revise their schedule due to their updated state:  
+- Insert appropriate new activities that reflect the change in status  
+- Modify or remove existing activities as needed  
+- Ensure the **total duration remains unchanged**
+- Return the result as a strict JSON array without any Markdown formatting or code block markers
+- Use this format for each activity:
+
+{
+  "DurationInMinutes": 10,
+  "Activity": "checking whether the guard has heard the strange noise"
+}
+
+If {{ agent }} chooses to keep their schedule unchanged, respond with: `none`  
+Respond with **only** the JSON array (if changed), or `none`. No explanation.
+

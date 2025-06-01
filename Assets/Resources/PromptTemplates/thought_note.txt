@@ -1,0 +1,11 @@
+# thought_note.txt  
+# params: agent, iss, current_time, statements
+
+Here is a brief description of {{ agent }}:  
+{{ iss }}
+
+Here are thoughts and memories in {{ agent }}’s mind:  
+{{ statements }}
+
+Given the statements above, how might we summarize {{ agent }}'s feelings about their days up to now?
+Write the response from {{ agent }}’s perspective, as a natural sentence.

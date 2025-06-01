@@ -1,0 +1,13 @@
+# action_triple.txt  
+# params: agent, action
+
+Extract the semantic triple from the following sentence.  
+Output exactly **three** components, in the format:  
+subject || predicate || object
+
+- The triple should capture the core meaning of the sentence.  
+- You may interpret each part broadly (e.g., include context or modifiers if relevant).  
+- If the object cannot be clearly found or inferred, use `none`.  
+- Do not add extra text or explanation. Respond with only the triple, separated by "||".
+
+Input: {{ agent }} is {{ action }}

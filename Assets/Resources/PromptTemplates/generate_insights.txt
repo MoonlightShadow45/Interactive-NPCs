@@ -1,0 +1,23 @@
+# generate_insights.txt  
+# params: agent, iss, statements, count
+
+Here is a brief description of {{ agent }}:  
+{{ iss }}
+
+Here are thoughts and memories in {{ agent }}’s mind:  
+{{ statements }}
+
+List {{ count }} high-level insights that {{ agent }} can infer from the above.  
+Each insight must be grounded in one or more of the numbered statements.
+
+Return a JSON array like this:
+[
+  {
+    "thought": "Insight text here.",
+    "evidence": [2, 4]
+  },
+  ...
+]
+
+Return the result as a strict JSON array without any Markdown formatting or code block markers. No extra text.
+

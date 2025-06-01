@@ -1,0 +1,10 @@
+# chat_summary.txt  
+# params: agent, iss, chat_history, target
+
+Here is a brief description of {{ agent }}:  
+{{ iss }}
+
+{{ agent }} had a conversation with {{ target }}. Here is the content of the conversation:  
+{{ chat_history }}
+
+Summarize the conversation in one sentence for {{ agent }}. Respond with only the summary. No explanations or extra text.

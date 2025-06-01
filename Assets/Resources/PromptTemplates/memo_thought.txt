@@ -1,0 +1,13 @@
+# memo_thought.txt  
+# params: agent, iss, chat_history, target
+
+Here is a brief description of {{ agent }}:  
+{{ iss }}
+
+{{ agent }} had a conversation with {{ target }}. The content of the conversation is:  
+{{ chat_history }}
+
+From {{ agent }}’s perspective, write down anything in the conversation that they might find personally interesting or worth remembering.  
+Respond with a single full sentence that reflects {{ agent }}’s thoughts, feelings, or curiosity.  
+If there is nothing meaningful or noteworthy, respond with: None
+

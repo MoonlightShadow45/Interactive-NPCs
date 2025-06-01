@@ -1,0 +1,10 @@
+# target_sector.txt
+# params: agent, iss, action, sectors
+
+Here is a brief description of {{ agent }}:
+{{ iss }}
+
+{{ agent }} is planning on {{ action }}. The following are available sectors and their descriptions:
+{{ sectors }}
+
+Respond with only the name of the selected sector that is the most suitable for the action. No explanation or punctuation.

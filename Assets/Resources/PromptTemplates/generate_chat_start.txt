@@ -1,0 +1,23 @@
+# generate_chat_start.txt  
+# params: agent, iss, statements, target
+
+Here is a brief description of {{ agent }}:  
+{{ iss }}
+
+{{ agent }} is starting a conversation with {{ target }}.  
+
+Here are thoughts and memories in {{ agent }}’s mind:  
+{{ statements }}
+
+You are role-playing as {{ agent }}.
+What does {{ agent }} say to initiate the conversation with {{ target }}?
+
+Respond in **exactly** this JSON format:
+{
+  "message": "The message content",
+  "end": false
+}
+
+- Always set "end" to false.
+- Output only the JSON, without any Markdown formatting or code block markers. No extra text.
+

@@ -1,0 +1,18 @@
+# action_mode_character.txt  
+# params: agent, iss, action, target, statements
+
+Here is a brief description of {{ agent }}:  
+{{ iss }}
+
+{{ agent }} plans on {{ action }}. 
+About {{ target }}, here are some thoughts and memories in {{ agent }}’s mind:  
+{{ statements }}
+
+Should they **chat with**, **attack**, **give something to**, or simply **wait and follow** {{ target }}?
+
+Respond with **only** one of the following:  
+`Chat`, `Attack`, `Give`, or `Wait`.  
+
+- Attack when {{ agent }} thinks that {{ target }} is hostile.
+- No explanation or punctuation.
+

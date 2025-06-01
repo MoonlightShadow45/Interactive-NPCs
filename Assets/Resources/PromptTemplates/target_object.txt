@@ -1,0 +1,19 @@
+# target_object.txt  
+# params: agent, iss, action, sector, objects
+
+Here is a brief description of {{ agent }}:  
+{{ iss }}
+
+{{ agent }} is planning on {{ action }} in {{ sector }}. The following are available objects and their descriptions:  
+{{ objects }}
+
+Choose the object that is most suitable for the action, based on the descriptions.
+
+Respond with the name of the selected object and a second value (true or false), separated by a comma.
+
+- The second value must be `true` **only** if the selected object is `"relic"` and {{ agent }} intends to loot it.  
+- For **all other objects**, the second value must be `false` — even if they are suitable for the action.
+
+If none of the objects are suitable, respond with: `none,false`
+
+Output only a single line. No explanation or punctuation.

@@ -1,0 +1,13 @@
+# plan_note.txt  
+# params: agent, iss, statements
+
+Here is a brief description of {{ agent }}:  
+{{ iss }}
+
+Here are thoughts and memories in {{ agent }}’s mind:  
+{{ statements }}
+
+Based on this information, is there anything {{ agent }} should keep in mind while planning the rest of the day?  
+Include specific scheduling details (date, time, location) if mentioned.  
+Write the response from {{ agent }}’s perspective, as a natural sentence.  
+If nothing is relevant, respond with: Nothing specific regarding the planning.

@@ -1,0 +1,11 @@
+# target_character.txt  
+# params: agent, iss, action
+
+Here is a brief description of {{ agent }}:  
+{{ iss }}
+
+{{ agent }} plans on {{ action }}. Determine whether {{ agent }} should talk to, attack or follow another character. Consider only the characters explicitly mentioned above(if any).
+
+If so, return only the exact name of the most suitable character from the above input.  
+If not, return `None`.  
+Respond with **only** the character name or `None`. No explanation or punctuation.

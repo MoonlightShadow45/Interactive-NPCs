@@ -1,0 +1,28 @@
+# generate_chat.txt  
+# params: agent, iss, statements, target, chat_history, sequence
+
+Here is a brief description of {{ agent }}:  
+{{ iss }}
+
+{{ agent }} is talking with {{ target }}.  
+Their current chat history is:  
+{{ chat_history }}
+
+Here are thoughts and memories in {{ agent }}’s mind:  
+{{ statements }}
+
+You are role-playing as {{ agent }}.  
+Now is the {{ sequence }} time {{ agent }} speaks (out of at most 5 total turns).  
+What does {{ agent }} say to {{ target }} next?
+
+Respond in **exactly** this JSON format:
+{
+  "message": "The message content",
+  "end": false
+}
+
+- "message" can be an empty string if {{ agent }} chooses to remain silent this turn.
+- Set "end" to true only if {{ agent }} thinks the conversation should be over after the current "message".
+- The 5-turn limit is handled externally and does not affect "end".
+- Output only the JSON, without any Markdown formatting or code block markers. No extra text.
+

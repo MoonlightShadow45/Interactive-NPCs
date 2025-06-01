@@ -1,0 +1,10 @@
+# poignancy_thought.txt
+# params: agent, iss, thought
+
+Here is a brief description of {{ agent }}.
+{{ iss }}
+
+On a scale of 1 to 10, where 1 is purely mundane (e.g., I need to do the dishes) and 10 is extremely poignant (e.g., I love Marina, I need to steal the relic), rate the likely poignancy of the following thought for {{ agent }}:
+
+Thought: {{ thought }}
+Respond with a single number only, between 1 and 10. No explanation.

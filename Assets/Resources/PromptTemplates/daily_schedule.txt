@@ -1,0 +1,26 @@
+# daily_schedule.txt
+# params: agent, iss, wakeup_hour, daily_plan
+
+Here is a brief description of {{ agent }}:
+{{ iss }}
+
+
+{{ agent }}'s plan for today includes the following key activities with suggested times:
+{{ daily_plan }}
+
+Respond with a list of more detailed hourly-scheduled activities starting from hour {{ wakeup_hour }} up to hour 23. The output must be a JSON object with the following format:
+
+{
+  "plan": [
+    { "hour": int, "activity": string }
+  ]
+}
+
+Requirements:
+- Only include a single entry per new activity, starting from its starting hour;
+- Do not repeat an activity over consecutive hours if it continues — assume it fills the time until the next activity;
+- "activity" must be in present continuous tense, so it can complete the sentence: "{{ agent }} is {{ activity }}";
+- Ensure that all key activities are placed near their intended hour;
+- Fill in reasonable filler activities when needed;
+- Keep the plan consistent with {{ agent }}'s identity, behavior, and personality.
+- Return only the JSON object, without any Markdown formatting or code block markers — no explanations or extra text.

@@ -1,0 +1,15 @@
+# poignancy_event.txt  
+# params: agent, iss, event
+
+Here is a brief description of {{ agent }}.  
+{{ iss }}
+
+On a scale from 1 to 10, rate how emotionally significant the following event is for {{ agent }}, based on its likelihood to affect their short- or medium-term goals.
+
+
+- 1 = Mundane and neutral (e.g., routine greetings), unlikely to affect behavior or emotions  
+- 10 = Emotionally intense or personally meaningful (e.g., threat to purpose, identity, or core attachments), likely to shift priorities or cause internal reaction
+
+Event: {{ event }}
+
+Respond with a single number from 1 to 10. No explanation. No extra text.

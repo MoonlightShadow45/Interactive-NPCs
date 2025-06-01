@@ -1,0 +1,13 @@
+# action_mode_object.txt  
+# params: agent, iss, action, target
+
+Here is a brief description of {{ agent }}:  
+{{ iss }}
+
+{{ agent }} plans on {{ action }}. Should they **interact with** or simply **wait beside** {{ target }}?
+
+Note: If the action involves "loot the relic" or "leave the town from the escape point", they should **interact**.
+
+Respond with **only** one of the following:  
+`Interact` or `Wait`.  
+No explanation or punctuation.

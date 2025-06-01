@@ -1,0 +1,21 @@
+# daily_planning.txt
+# params: agent, iss, wakeup_time
+
+Here is a brief description of {{ agent }}:
+{{ iss }}
+
+Today {{ agent }} is planning to wake up at {{ wakeup_time }}. Respond with {{ agent }}'s plan for the rest of the day in JSON format. The format should be:
+
+{
+  "plan": [
+    { "hour": int, "activity": string }
+  ]
+}
+
+Requirements:
+- Only return a valid JSON object, without any Markdown formatting or code block markers;
+- Each entry must include an integer 'hour' (0–23) and a string 'activity';
+- {{ agent }} must be asleep between 23 and 3;
+- One activity can last more than one hour, and it's fine to have gaps between activities;
+- Avoid unnecessary repetition or filler tasks just to fill time and only include hours when meaningful activities start;
+- Activities should reflect {{ agent }}'s identity, lifestyle, and mood for the day.

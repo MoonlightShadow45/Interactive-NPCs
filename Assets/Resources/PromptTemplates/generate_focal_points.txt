@@ -1,0 +1,12 @@
+# generate_focal_points.txt  
+# params: agent, iss, statements, count
+
+Here is a brief description of {{ agent }}:  
+{{ iss }}
+
+Here are thoughts and memories in {{ agent }}’s mind:  
+{{ statements }}
+
+Based only on this information, list {{ count }} high-level questions that {{ agent }} is most likely to care about right now.  
+Each question should reflect a core concern or curiosity grounded in the provided thoughts and memories.  
+Respond with exactly {{ count }} full questions, separated by ` || `. No extra text.

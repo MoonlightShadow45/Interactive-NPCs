@@ -1,0 +1,29 @@
+# schedule_after_reaction.txt
+# params: agent, iss, next_schedules, events
+
+Here is a brief description of {{ agent }}:
+{{ iss }}
+
+Here is {{ agent }}'s current schedule for the rest of today (presented in human-readable format):
+{{ next_schedules }}
+
+The total duration of this schedule must remain the same after any modifications.  
+
+{{ agent }} has perceived and recalled the following things:
+{{ events }}
+
+If {{ agent }} would like to interrupt the current schedule and respond to any of these events, revise the schedule accordingly: 
+- Insert appropriate subtasks for the response
+- Adjust or remove existing subtasks as needed  
+- Ensure the **total duration remains the same** as the original schedule  
+- Return the result as a strict JSON array without any Markdown formatting or code block markers
+- The updated schedule must follow this format for each item:
+
+{
+  "DurationInMinutes": 10,
+  "Activity": "checking whether the guard has heard the strange noise"
+}
+
+If {{ agent }} doesn't want to respond to any of the events, return exactly: `none`
+
+Respond with **only** the JSON array (if reacting), or `none`. No explanation or extra content.
