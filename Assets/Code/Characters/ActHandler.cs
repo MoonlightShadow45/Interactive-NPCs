@@ -261,6 +261,13 @@ namespace Code.Characters
 
         public async Task GiveItem()
         {
+            // If the target npc is dead, do not give item
+            if (_npc.TargetCharacter.currentHitPoints <= 0)
+            {
+                Debug.LogWarning($"{_npc.characterName} cannot give item to {_npc.TargetCharacter.characterName} because they are dead.");
+                return;
+            }
+            
             // Like chat, we need to generate what to give, and a message
 
             // Retrieve the relevant nodes about the target from memory

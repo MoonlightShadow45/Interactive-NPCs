@@ -8,6 +8,6 @@ Here is a brief description of {{ agent }}:
 {{ chat_history }}
 
 From {{ agent }}’s perspective, write down anything in the conversation that they might find personally interesting or worth remembering.  
-Respond with a single full sentence that reflects {{ agent }}’s thoughts, feelings, or curiosity.  
+Respond with a single full sentence that reflects {{ agent }}’s thoughts, feelings, or curiosity. The sentence must be shorter than 40 words.  
 If there is nothing meaningful or noteworthy, respond with: None
 

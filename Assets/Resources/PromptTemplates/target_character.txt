@@ -4,8 +4,14 @@
 Here is a brief description of {{ agent }}:  
 {{ iss }}
 
-{{ agent }} plans on {{ action }}. Determine whether {{ agent }} should talk to, attack or follow another character. Consider only the characters explicitly mentioned above(if any).
+**Plan:**
 
-If so, return only the exact name of the most suitable character from the above input.  
+{{ agent }} plans on {{ action }}. 
+
+**Task:**
+
+Determine whether {{ agent }} should talk to, attack or follow another person to carry out the plan. Consider only the names explicitly mentioned in the plan or the brief description.
+
+If so, return only the exact name of the most suitable person from the above input.  
 If not, return `None`.  
 Respond with **only** the character name or `None`. No explanation or punctuation.

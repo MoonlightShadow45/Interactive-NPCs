@@ -258,39 +258,45 @@ namespace Code.Characters.Memories
             return string.Join("\n", content);
         }
         
-        public List<ConceptNode> RetrieveRelevantEvents(string subject, string predicate, string @object)
+        public List<ConceptNode> RetrieveRelevantEvents(ConceptNode e)
         {
             var res = new List<ConceptNode>();
-            if (KeywordToEvents.ContainsKey(subject))
+            if (KeywordToEvents.ContainsKey(e.Subject))
             {
-                res.AddRange(KeywordToEvents[subject]);
+                var subjectEvents = KeywordToEvents[e.Subject];
+                res.AddRange(subjectEvents.Where(ev => ev.NodeId != e.NodeId));
             }
-            if (KeywordToEvents.ContainsKey(predicate))
+            if (KeywordToEvents.ContainsKey(e.Predicate))
             {
-                res.AddRange(KeywordToEvents[predicate]);
+                var predicateEvents = KeywordToEvents[e.Predicate];
+                res.AddRange(predicateEvents.Where(ev => ev.NodeId != e.NodeId));
             }
-            if (KeywordToEvents.ContainsKey(@object))
+            if (KeywordToEvents.ContainsKey(e.Object))
             {
-                res.AddRange(KeywordToEvents[@object]);
+                var objectEvents = KeywordToEvents[e.Object];
+                res.AddRange(objectEvents.Where(ev => ev.NodeId != e.NodeId));
             }
 
             return res;
         }
         
-        public List<ConceptNode> RetrieveRelevantThoughts(string subject, string predicate, string @object)
+        public List<ConceptNode> RetrieveRelevantThoughts(ConceptNode e)
         {
             var res = new List<ConceptNode>();
-            if (KeywordToThoughts.ContainsKey(subject))
+            if (KeywordToThoughts.ContainsKey(e.Subject))
             {
-                res.AddRange(KeywordToThoughts[subject]);
+                var subjectEvents = KeywordToEvents[e.Subject];
+                res.AddRange(subjectEvents.Where(ev => ev.NodeId != e.NodeId));
             }
-            if (KeywordToThoughts.ContainsKey(predicate))
+            if (KeywordToThoughts.ContainsKey(e.Predicate))
             {
-                res.AddRange(KeywordToThoughts[predicate]);
+                var predicateEvents = KeywordToThoughts[e.Predicate];
+                res.AddRange(predicateEvents.Where(ev => ev.NodeId != e.NodeId));
             }
-            if (KeywordToThoughts.ContainsKey(@object))
+            if (KeywordToThoughts.ContainsKey(e.Object))
             {
-                res.AddRange(KeywordToThoughts[@object]);
+                var objectEvents = KeywordToThoughts[e.Object];
+                res.AddRange(objectEvents.Where(ev => ev.NodeId != e.NodeId));
             }
 
             return res;

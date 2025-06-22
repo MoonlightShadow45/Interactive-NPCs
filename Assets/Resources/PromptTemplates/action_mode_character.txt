@@ -4,11 +4,16 @@
 Here is a brief description of {{ agent }}:  
 {{ iss }}
 
-{{ agent }} plans on {{ action }}. 
 About {{ target }}, here are some thoughts and memories in {{ agent }}’s mind:  
 {{ statements }}
 
-Should they **chat with**, **attack**, **give something to**, or simply **wait and follow** {{ target }}?
+**Plan:**
+
+{{ agent }} plans on {{ action }}.
+
+**Task:**
+
+Should they **talk to**, **attack**, **give something to**, or simply **wait and follow** {{ target }}, to carry out the above plan?
 
 Respond with **only** one of the following:  
 `Chat`, `Attack`, `Give`, or `Wait`.  

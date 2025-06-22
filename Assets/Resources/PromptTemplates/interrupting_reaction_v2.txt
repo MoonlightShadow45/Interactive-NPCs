@@ -17,10 +17,10 @@ The action must follow this json format:
 }
 
 Notes: 
-- The `Activity` must be a phrase that fits into a sentence: "{{ agent }} is {activity}".
+- The `Activity` must be a verb phrase in -ing form that fits into the sentence: "{{ agent }} is {Activity}".
 - DurationInMinutes must be a multiple of 10  
 - Return the result as a strict **JSON object**, with no Markdown formatting, code blocks, or extra text
-- Specify whether {{ agent }} would like to attack, chat with, or give something to another character, or simply wait and follow them, if the activity is related to another character.
+- If `Activity` is related to another character, it must include one of the following verbs: "attack", "talk", "give"(when {{ agent }} would like to give an item to someone), "follow" or "run away from".
 
 If {{ agent }} doesn't want to respond to any of the events, return exactly: `none`
 

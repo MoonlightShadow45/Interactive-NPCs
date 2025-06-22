@@ -266,7 +266,7 @@ namespace Code.Characters
                     Object = "relic",
                     Position = position,
                     GameTime = GameManager.Instance.CurrentGameTime,
-                    Description = $"{characterName} loots the relic"
+                    Description = $"{characterName} loots the relic from the chest"
                 };
                 TileManager.Instance.AddEventToTile(position, lootEvent);
                 
@@ -281,7 +281,6 @@ namespace Code.Characters
                     Description = $"The relic is taken"
                 };
                 TileManager.Instance.AddEventToTile(relicTile.Value, relicTakenEvent);
-                
             }
 
             Debug.Log("Player character " + characterName + " has finished their turn.");

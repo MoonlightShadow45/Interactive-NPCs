@@ -501,7 +501,7 @@ MonoBehaviour:
     Quantity: 3000
   RelicSprite: {fileID: 1621945549}
   IsEscaping: 0
-  vision: 6
+  vision: 4
   AssociativeMemory:
     Events: []
     Thoughts: []
@@ -1979,7 +1979,7 @@ MonoBehaviour:
     Quantity: 50
   RelicSprite: {fileID: 1741811699}
   IsEscaping: 0
-  vision: 5
+  vision: 4
   AssociativeMemory:
     Events: []
     Thoughts: []
@@ -1993,9 +1993,9 @@ MonoBehaviour:
     permission. Though simple-minded and easily deceived, he never doubts his purpose
     or his performance. He knows the manor holds a relic that glows faintly, which
     he treats as something very important, though he\u2019s not sure why."
-  dailyPlanRequirements: "Edric is scheduled to stand watch at the manor door from
-    3 to 23. His focus is on keeping anything \u201Csuspicious\u201D away, as he
-    understands it."
+  dailyPlanRequirements: "Edric is scheduled to stand watch at the manor door(-1,
+    4) from 3 to 23. His focus is on keeping anything \u201Csuspicious\u201D away,
+    as he understands it."
   currently: Edric is on duty at his post, looking for anyone who is suspicious.
   lifestyle: Edric begins his trance at 23 and remains by the door, resting in place
     until 3. He never leaves his post, even to sleep, and treats his 150-gold monthly
@@ -9783,7 +9783,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 14
-      m_TileSpriteIndex: 22
+      m_TileSpriteIndex: 34
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -9833,7 +9833,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 23
-      m_TileSpriteIndex: 21
+      m_TileSpriteIndex: 33
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -9843,7 +9843,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 16
-      m_TileSpriteIndex: 18
+      m_TileSpriteIndex: 31
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -9933,7 +9933,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 22
-      m_TileSpriteIndex: 24
+      m_TileSpriteIndex: 29
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10363,7 +10363,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 20
-      m_TileSpriteIndex: 17
+      m_TileSpriteIndex: 26
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10648,42 +10648,42 @@ Tilemap:
     m_Data: {fileID: 795863839, guid: 748bf2da24354474a94767e3adaced15, type: 3}
   - m_RefCount: 4
     m_Data: {fileID: 1891583936, guid: 748bf2da24354474a94767e3adaced15, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 483625075, guid: 748bf2da24354474a94767e3adaced15, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -609825892, guid: 748bf2da24354474a94767e3adaced15, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 2
     m_Data: {fileID: -302381789, guid: 748bf2da24354474a94767e3adaced15, type: 3}
   - m_RefCount: 8
     m_Data: {fileID: -1018015422, guid: 748bf2da24354474a94767e3adaced15, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 1667483223, guid: 748bf2da24354474a94767e3adaced15, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -355545457, guid: 748bf2da24354474a94767e3adaced15, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 19
     m_Data: {fileID: 1458683833, guid: 748bf2da24354474a94767e3adaced15, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
-    m_Data: {fileID: -1244006160, guid: 748bf2da24354474a94767e3adaced15, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+    m_Data: {fileID: 483625075, guid: 748bf2da24354474a94767e3adaced15, type: 3}
   - m_RefCount: 19
     m_Data: {fileID: -359116333, guid: 748bf2da24354474a94767e3adaced15, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 1977678153, guid: 748bf2da24354474a94767e3adaced15, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -1244006160, guid: 748bf2da24354474a94767e3adaced15, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 47946695, guid: 748bf2da24354474a94767e3adaced15, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -609825892, guid: 748bf2da24354474a94767e3adaced15, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -1556721156, guid: 748bf2da24354474a94767e3adaced15, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 1667483223, guid: 748bf2da24354474a94767e3adaced15, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -355545457, guid: 748bf2da24354474a94767e3adaced15, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -942272789, guid: 748bf2da24354474a94767e3adaced15, type: 3}
   m_TileMatrixArray:
@@ -11068,7 +11068,7 @@ MonoBehaviour:
     Quantity: 10
   RelicSprite: {fileID: 2033778530}
   IsEscaping: 0
-  vision: 5
+  vision: 4
   AssociativeMemory:
     Events: []
     Thoughts: []
@@ -11179,7 +11179,7 @@ MonoBehaviour:
     Quantity: 50
   RelicSprite: {fileID: 989946518}
   IsEscaping: 0
-  vision: 5
+  vision: 4
   AssociativeMemory:
     Events: []
     Thoughts: []
@@ -11191,9 +11191,10 @@ MonoBehaviour:
     officially assigned to guard duty, he views the role as a convenient paycheck
     rather than a calling. He knows the relic inside glows faintly, and while he
     doesn\u2019t fully understand its purpose, he keeps an eye on anyone who is suspicious."
-  dailyPlanRequirements: Roland is assigned to house guard duty from 3 to 23.  His
-    intent is to maintain appearances, avoid conflict, and manage problems only if
-    they threaten his comfort or pay.
+  dailyPlanRequirements: Roland is assigned to house door(-1, 14) guard duty from
+    3 to 23.  He is expected to stop every suspicious person from entering the house,
+    but his intent is to maintain appearances, avoid conflict, and manage problems
+    only if they threaten his comfort or pay.
   currently: Roland is on duty, maintaining a watchful presence while minimizing
     personal effort. He is keeping an eye on anyone suspicious, avoiding losing his
     job.

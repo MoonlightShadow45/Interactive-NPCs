@@ -55,7 +55,7 @@ namespace Code.Tiles
     }
 
     [System.Serializable]
-    public class GameTime
+    public class GameTime : System.IComparable<GameTime>
     {
         public int eventTurn;
         public int eventSequence;
@@ -87,6 +87,27 @@ namespace Code.Tiles
 
             return false;
         }
+        
+        // Comparer
+        public static bool operator >(GameTime a, GameTime b)
+        {
+            return a.IsNewerThan(b);
+        }
+        
+        public static bool operator <(GameTime a, GameTime b)
+        {
+            return b.IsNewerThan(a);
+        }
+        
+        public static bool operator ==(GameTime a, GameTime b)
+        {
+            return a?.eventTurn == b?.eventTurn && a?.eventSequence == b?.eventSequence;
+        }
+        
+        public static bool operator !=(GameTime a, GameTime b)
+        {
+            return !(a == b);
+        }
 
         /// <summary>
         /// Get the real time of the GameTime object in the format of HH:MM
@@ -95,6 +116,16 @@ namespace Code.Tiles
         public string ToRealTime()
         {
             return GameManager.Instance.GetRealTime(eventTurn);
+        }
+
+        public int CompareTo(GameTime other)
+        {
+            if (other == null) return 1; // null is considered less than any instance
+            if (eventTurn != other.eventTurn)
+            {
+                return eventTurn.CompareTo(other.eventTurn);
+            }
+            return eventSequence.CompareTo(other.eventSequence);
         }
     }
 }

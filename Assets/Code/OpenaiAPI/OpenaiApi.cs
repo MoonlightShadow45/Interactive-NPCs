@@ -18,8 +18,7 @@ namespace Code.OpenaiApi
     {
         private static readonly EmbeddingClient EmbeddingClient = new(
             model: "text-embedding-3-small",
-            apiKey: 
-            "your_api_key"
+            apiKey: "your_api_key"
         );
 
         private static readonly ChatClient ChatClient = new(

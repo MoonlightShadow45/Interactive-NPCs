@@ -8,7 +8,7 @@ Here are thoughts and memories in {{ agent }}’s mind:
 {{ statements }}
 
 List {{ count }} high-level insights that {{ agent }} can infer from the above.  
-Each insight must be grounded in one or more of the numbered statements.
+Each insight must be grounded in one or more of the numbered statements, and shorter than 30 words.
 
 Return a JSON array like this:
 [

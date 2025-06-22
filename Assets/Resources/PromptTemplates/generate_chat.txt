@@ -17,12 +17,12 @@ What does {{ agent }} say to {{ target }} next?
 
 Respond in **exactly** this JSON format:
 {
-  "message": "The message content",
-  "end": false
+  "message": string,
+  "end": bool
 }
 
 - "message" can be an empty string if {{ agent }} chooses to remain silent this turn.
-- Set "end" to true only if {{ agent }} thinks the conversation should be over after the current "message".
+- Set "end" to true if {{ agent }} thinks the conversation should be over after the current "message".
 - The 5-turn limit is handled externally and does not affect "end".
 - Output only the JSON, without any Markdown formatting or code block markers. No extra text.
 

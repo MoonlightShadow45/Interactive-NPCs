@@ -147,7 +147,7 @@ namespace Code.Tiles
                 {
                     return new TileObject
                     {
-                        Name = "Gareth_Standing_Point",
+                        Name = "Gareth_Resting_Point",
                         Description = "Where Gareth likes to take rest and do his own daily things when there is no real 'business' to attend."
                     };
                 }

@@ -11,7 +11,7 @@ Now it is {{ current_time }}, and {{ agent }} is thinking about the following:
 Only update the status if the new thoughts or plans meaningfully affect what {{ agent }} is focused on or doing.
 
 If {{ agent }}'s status should remain unchanged, respond with exactly: `None`  
-Otherwise, respond with the new updated status. Write the new status in third person, describing {{ agent }} as they are now.  
+Otherwise, respond with the new updated status. Write the new status in third person, using a sentence that is shorter than 30 words.  
 If any time, location, or scheduling details are present, include them clearly.  
 No extra explanation.
 

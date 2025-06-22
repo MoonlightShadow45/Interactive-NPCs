@@ -23,8 +23,8 @@ namespace Code.Characters.Retrieve
             var retrieved = new Dictionary<ConceptNode, RetrievedEvents>();
             foreach (var e in events)
             {
-                var relevantEvents = _npc.AssociativeMemory.RetrieveRelevantEvents(e.Subject, e.Predicate, e.Object);
-                var relevantThoughts = _npc.AssociativeMemory.RetrieveRelevantThoughts(e.Subject, e.Predicate, e.Object);
+                var relevantEvents = _npc.AssociativeMemory.RetrieveRelevantEvents(e);
+                var relevantThoughts = _npc.AssociativeMemory.RetrieveRelevantThoughts(e);
                 
                 retrieved[e] = new RetrievedEvents
                 {
@@ -47,13 +47,13 @@ namespace Code.Characters.Retrieve
         public override string ToString()
         {
             var sb = new System.Text.StringBuilder();
-            sb.AppendLine($"Original Event: {OriginalEvent.Description}");
+            sb.AppendLine($"Original Event: at {OriginalEvent.CreationTime.ToRealTime()}, {OriginalEvent.Description}");
             if (RelevantEvents.Count > 0)
             {
                 sb.AppendLine("Relevant Events:");
                 foreach (var e in RelevantEvents)
                 {
-                    sb.AppendLine($"- {e.Description}");
+                    sb.AppendLine($"- at {e.CreationTime.ToRealTime()}, {e.Description}");
                 }
             }
 
@@ -62,7 +62,7 @@ namespace Code.Characters.Retrieve
                 sb.AppendLine("Relevant Thoughts:");
                 foreach (var t in RelevantThoughts)
                 {
-                    sb.AppendLine($"- {t.Description}");
+                    sb.AppendLine($"- at {t.CreationTime.ToRealTime()}, {t.Description}");
                 }
             }
 

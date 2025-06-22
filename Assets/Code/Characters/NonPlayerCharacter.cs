@@ -377,6 +377,12 @@ namespace Code.Characters
         public override async Task<(string, bool)> ReceiveMessage(string message, Character chattingCharacter,
             List<ChatEntry> history, int sequence)
         {
+            // if the npc is dead, return immediately
+            if (currentHitPoints <= 0)
+            {
+                return ($"{characterName} is dead and thus can't talk.", false);
+            }
+            
             while (_isCleaningUp)
             {
                 // Wait until the NPC has finished cleaning up
@@ -659,10 +665,10 @@ namespace Code.Characters
                 scores.Add(score);
             }
 
-            // Sort the first {cnt} nodes by the final score
+            // Sort the first {cnt} nodes by the creation time
             var resNodes = nodes
                 .Select((node, index) => new { Node = node, Score = scores[index] })
-                .OrderByDescending(x => x.Score)
+                .OrderByDescending(x => x.Node.CreationTime)
                 .Take(cnt)
                 .Select(x => x.Node)
                 .ToList();
